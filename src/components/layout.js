@@ -11,13 +11,25 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import "./layout.css"
+import BlogPreview from "./blogPreview"
 
 const Layout = ({ children }) => {
+
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
         siteMetadata {
           title
+        }
+      }
+      allMarkdownRemark {
+        nodes {
+          frontmatter {
+            title
+            excerpt
+            slug
+            date(fromNow: true)
+          }
         }
       }
     }
@@ -34,6 +46,17 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+        
+        <BlogPreview 
+        blogTitle={data.allMarkdownRemark.nodes[0].frontmatter.title || `Blog Title`}
+        excerpt={data.allMarkdownRemark.nodes[0].frontmatter.excerpt || `Short description of the blog.`}
+        ></BlogPreview>
+
+        <BlogPreview 
+        blogTitle={data.allMarkdownRemark.nodes[1].frontmatter.title || `Blog Title`}
+        excerpt={data.allMarkdownRemark.nodes[1].frontmatter.excerpt || `Short description of the blog.`}
+        ></BlogPreview>
+
         <footer
           style={{
             marginTop: `2rem`,
