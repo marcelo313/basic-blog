@@ -13,6 +13,8 @@ import Header from "./header"
 import "./layout.css"
 import BlogPreview from "./blogPreview"
 
+
+
 const Layout = ({ children }) => {
 
   const data = useStaticQuery(graphql`
@@ -35,8 +37,14 @@ const Layout = ({ children }) => {
     }
   `)
 
+  const nodes = data.allMarkdownRemark.nodes
+  const blogPreviews = nodes.map((node) =>
+    <li>{node.frontmatter.title}</li>
+  )
+  console.log(blogPreviews)
+
   return (
-    <>
+    <li>
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div
         style={{
@@ -46,8 +54,14 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        
-        <BlogPreview 
+        <div>
+          <h2>Check out My Blog</h2>
+          <ul>
+            {blogPreviews}
+          </ul>
+        </div>
+
+        {/* <BlogPreview 
         blogTitle={data.allMarkdownRemark.nodes[0].frontmatter.title || `Blog Title`}
         excerpt={data.allMarkdownRemark.nodes[0].frontmatter.excerpt || `Short description of the blog.`}
         ></BlogPreview>
@@ -55,7 +69,7 @@ const Layout = ({ children }) => {
         <BlogPreview 
         blogTitle={data.allMarkdownRemark.nodes[1].frontmatter.title || `Blog Title`}
         excerpt={data.allMarkdownRemark.nodes[1].frontmatter.excerpt || `Short description of the blog.`}
-        ></BlogPreview>
+        ></BlogPreview> */}
 
         <footer
           style={{
@@ -67,7 +81,7 @@ const Layout = ({ children }) => {
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>
-    </>
+    </li>
   )
 }
 
