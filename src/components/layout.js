@@ -13,8 +13,6 @@ import Header from "./header"
 import "./layout.css"
 import BlogPreview from "./blogPreview"
 
-
-
 const Layout = ({ children }) => {
 
   const data = useStaticQuery(graphql`
@@ -39,7 +37,7 @@ const Layout = ({ children }) => {
 
   const nodes = data.allMarkdownRemark.nodes
   const blogPreviews = nodes.map((node) =>
-    <li>{node.frontmatter.title}</li>
+    <BlogPreview blogTitle={node.frontmatter.title || `Blog Title`} excerpt={node.frontmatter.excerpt || `Short description of the blog.`}/>
   )
   console.log(blogPreviews)
 
@@ -55,21 +53,11 @@ const Layout = ({ children }) => {
       >
         <main>{children}</main>
         <div>
-          <h2>Check out My Blog</h2>
+          <h2>Check out My Blog!</h2>
           <ul>
             {blogPreviews}
           </ul>
         </div>
-
-        {/* <BlogPreview 
-        blogTitle={data.allMarkdownRemark.nodes[0].frontmatter.title || `Blog Title`}
-        excerpt={data.allMarkdownRemark.nodes[0].frontmatter.excerpt || `Short description of the blog.`}
-        ></BlogPreview>
-
-        <BlogPreview 
-        blogTitle={data.allMarkdownRemark.nodes[1].frontmatter.title || `Blog Title`}
-        excerpt={data.allMarkdownRemark.nodes[1].frontmatter.excerpt || `Short description of the blog.`}
-        ></BlogPreview> */}
 
         <footer
           style={{
