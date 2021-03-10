@@ -37,7 +37,12 @@ const Layout = ({ children }) => {
 
   const nodes = data.allMarkdownRemark.nodes
   const blogPreviews = nodes.map((node) =>
-    <BlogPreview blogTitle={node.frontmatter.title || `Blog Title`} excerpt={node.frontmatter.excerpt || `Short description of the blog.`}/>
+    <BlogPreview 
+    key={node.frontmatter.slug}
+    blogTitle={node.frontmatter.title || `Blog Title`} 
+    excerpt={node.frontmatter.excerpt || `Short description of the blog.`}
+    date={node.frontmatter.date}
+    slug={node.frontmatter.slug}/>
   )
   console.log(blogPreviews)
 
