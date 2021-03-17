@@ -22,28 +22,8 @@ const Layout = ({ children }) => {
           title
         }
       }
-      allMarkdownRemark {
-        nodes {
-          frontmatter {
-            title
-            excerpt
-            slug
-            date(fromNow: true)
-          }
-        }
-      }
     }
   `)
-
-  const nodes = data.allMarkdownRemark.nodes
-  const blogPreviews = nodes.map((node) =>
-    <BlogPreview 
-    key={node.frontmatter.slug}
-    blogTitle={node.frontmatter.title || `Blog Title`} 
-    excerpt={node.frontmatter.excerpt || `Short description of the blog.`}
-    date={node.frontmatter.date}
-    slug={node.frontmatter.slug}/>
-  )
 
   return (
     <>
@@ -56,12 +36,6 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
-        <div>
-          <h2>Check out My Blog!</h2>
-          <ul>
-            {blogPreviews}
-          </ul>
-        </div>
 
         <footer
           style={{
