@@ -8,12 +8,12 @@ import SEO from "../components/seo"
 const IndexPage = () => (  
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <h1>Welcome!</h1>
+    <p>Thank you for visiting my website.</p>
+    <p>I hope you have fun while you're here.</p>
     <StaticImage
       src="../images/gatsby-astronaut.png"
-      width={300}
+      width={200}
       quality={95}
       formats={["AUTO", "WEBP", "AVIF"]}
       alt="A Gatsby astronaut"
