@@ -20,6 +20,12 @@ const IndexPage = () => (
       style={{ marginBottom: `1.45rem` }}
     />
 
+    <div class="rounded-xl bg-purple-100">
+      <h2 class="p-2 text-xl">This is a test component</h2>
+      <p class="p-2 text-gray-500">The purpose of this component is to mess with it and see TailwindCSS in action.</p>
+      <p class="p-2">TailwindCSS is a powerful tool that allows us to quickly change the types of styling we include in our web applications with a powerful utility-first approach.</p>
+
+    </div>
     <p>
       <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
     </p>
