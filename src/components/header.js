@@ -30,16 +30,17 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        backgroundColor: `#aec6cf`,
-        color: `#3B3B3B`,
+        color: `#38555F`,
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ margin: 0 }}>
+      <h1 style={{ 
+        margin: 0,
+         }}>
         <Link
           to="/"
           style={{
-            color: `#3B3B3B`,
+            color: `#38555F`,
             textDecoration: `none`,
           }}
         >
@@ -87,16 +88,10 @@ const Header = ({ siteTitle }) => (
       </ul>
     </div>
     <div style={{
-      backgroundColor: `#38555F`,
+      backgroundColor: `#aec6cf`,
       margin: `0 auto`,
       maxWidth: 960,
-      height: `22px`
-    }}></div>
-    <div style={{
-      backgroundColor: `#749DAD`,
-      margin: `0 auto`,
-      maxWidth: 960,
-      height: `22px`
+      height: `8px`
     }}></div>
       
   </header>
