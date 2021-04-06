@@ -24,8 +24,7 @@ import { Link } from "gatsby"
  * dark mint green - #267055
  */
 const Header = ({ siteTitle }) => (
-  // <header class="bg-purple-500 mb-4">
-  <header class="mb-4">
+  <header className="mb-8">
     <div
       style={{
         margin: `0 auto`,
@@ -48,7 +47,7 @@ const Header = ({ siteTitle }) => (
         </Link>
       </h1>
 
-      <ul class="pb-4">
+      <ul className="pb-4">
         <li>
           <Link to="/about"
           style={{
