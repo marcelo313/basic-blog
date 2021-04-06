@@ -1,6 +1,4 @@
 import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,54 +6,26 @@ import SEO from "../components/seo"
 const IndexPage = () => (  
   <Layout>
     <SEO title="Home" />
-    <h1>Welcome!</h1>
-    <p>Thank you for visiting my website.</p>
-    <p>I hope you have fun while you're here.</p>
-
-    <div class="rounded-xl p-4" style={{
-        color: `#3B3B3B`
-      }}>
-      <h2 class="p-2 text-xl" style={{
-        backgroundColor: `#417b9b`,
-        color: `#f8f8f8`
-      }}>This is a test component</h2>
-      <p class="p-2">The purpose of this component is to mess with it and see TailwindCSS in action.</p>
-      <p class="p-2">TailwindCSS is a powerful tool that allows us to quickly change the types of styling we include in our web applications with a powerful utility-first approach.</p>
-    </div>
-
-    <div>
-      <h2>This is another test component</h2>
-
-      <div 
-      class="p-3"
-      style={{
-        backgroundColor: `#FF5F02`,
-      }}>
-        <div 
-        style={{
-          // maxWidth: 960,
-          backgroundColor: `#FE953C`,
-          color: `#5A4F3E`,
-          padding: `1.45rem 1.0875rem`,
-        }}>
-          <p>This component is to test different color combinations for my branding</p>
-        </div>
-      </div>
-      
-
-      <div class="pb-8"
-      style={{ 
-        backgroundColor: `#B5CEC8`, 
-        color: `#383838`,
-        padding: `1.45rem 1.0875rem`,
-
-      }}>
-        <p>This is in a different text style</p>
-      </div>
-      
-    </div>
+    <h3>
+      I'm a software engineer, musician, and writer. 
+    </h3>
+    <h4>
+      I like to solve problems, write music, share stories, and build systems that work. 
+    </h4>
     <p>
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link> <br />
+      I think we all have a unique story to be told, and it is my passion to share those stories with the world and leave our legacy. 
+    </p>
+    <h3>
+      I believe in deep, personal connections to unravel the incredible possibilities within each of us. 
+    </h3>
+    <p>
+      I believe in embracing the future of technology for the <em>betterment and advancement of all people.</em> 
+    </p>
+    <p>
+      I'm located in Chicago, IL, and am slowly transitioning into the digital nomad life. 
+    </p>
+    <p>
+      Contact me to talk about building your own website, checkout my music, or learn something new in the content library. 
     </p>
   </Layout>
 )
