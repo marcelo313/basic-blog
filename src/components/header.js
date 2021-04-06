@@ -33,9 +33,9 @@ const Header = ({ siteTitle }) => (
         padding: `1.45rem 1.0875rem`,
       }}
     >
-      <h1 style={{ 
+      <h1 style={{
         margin: 0,
-         }}>
+      }}>
         <Link
           to="/"
           style={{
@@ -50,23 +50,23 @@ const Header = ({ siteTitle }) => (
       <ul className="pb-4">
         <li>
           <Link to="/about"
-          style={{
-            float: "right",
-            display: "inline-block",
-            textAlign: "center",
-            padding: "14px 16px"
-          }}>About Me</Link>
-          </li>
+            style={{
+              float: "right",
+              display: "inline-block",
+              textAlign: "center",
+              padding: "14px 16px"
+            }}>About Me</Link>
+        </li>
         <li>
           <Link to="/blog"
-          style={{
-            float: "right",
-            display: "inline-block",
-            textAlign: "center",
-            padding: "14px 16px"
-          }}>Stories</Link>
-          </li>
-          <li
+            style={{
+              float: "right",
+              display: "inline-block",
+              textAlign: "center",
+              padding: "14px 16px"
+            }}>Stories</Link>
+        </li>
+        <li
           style={{
             float: "right",
             display: "inline-block",
@@ -75,23 +75,32 @@ const Header = ({ siteTitle }) => (
           }}>Music
           </li>
         <li>
-        <Link to="/contact-me"
-        style={{
-          float: "right",
-          display: "inline-block",
-          textAlign: "center",
-          padding: "14px 16px"
-        }}>Contact Me</Link>
-          </li>
+          <Link to="/contact-me"
+            style={{
+              float: "right",
+              display: "inline-block",
+              textAlign: "center",
+              padding: "14px 16px"
+            }}>Contact Me</Link>
+        </li>
         <li>
-        <Link to="/meditation"
-        style={{
-          float: "right",
-          display: "inline-block",
-          textAlign: "center",
-          padding: "14px 16px"
-        }}>Meditate</Link>
-          </li>
+          <Link to="/meditation"
+            style={{
+              float: "right",
+              display: "inline-block",
+              textAlign: "center",
+              padding: "14px 16px"
+            }}>Meditate</Link>
+        </li>
+        <li>
+          <Link to="/my-work"
+            style={{
+              float: "right",
+              display: "inline-block",
+              textAlign: "center",
+              padding: "14px 16px"
+            }}>My Work</Link>
+        </li>
       </ul>
     </div>
     <div style={{
@@ -100,7 +109,7 @@ const Header = ({ siteTitle }) => (
       maxWidth: 960,
       height: `8px`
     }}></div>
-      
+
   </header>
 )
 
