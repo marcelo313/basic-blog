@@ -64,7 +64,15 @@ const Header = ({ siteTitle }) => (
             display: "inline-block",
             textAlign: "center",
             padding: "14px 16px"
-          }}>My Blog</Link>
+          }}>Stories</Link>
+          </li>
+          <li
+          style={{
+            float: "right",
+            display: "inline-block",
+            textAlign: "center",
+            padding: "14px 16px"
+          }}>Music
           </li>
         <li>
         <Link to="/contact-me"
@@ -87,7 +95,7 @@ const Header = ({ siteTitle }) => (
       </ul>
     </div>
     <div style={{
-      backgroundColor: `#aec6cf`,
+      backgroundColor: `#add8e6`,
       margin: `0 auto`,
       maxWidth: 960,
       height: `8px`
