@@ -6,7 +6,18 @@ const ContactPage = () => (
     <Layout>
         <SEO title="Contact Me" />
         <h1>Contact Me</h1>
-        <p>If you'd like to get in touch, please fill out this form.</p>
+        <p>
+            Looking to build a website for yourself or your business?
+        </p>
+        <p>
+            Interested in making some music together?
+        </p>
+        <p>
+            I'd love to hear from you!
+        </p>
+        <p>
+            Please fill out this short form and I will respond as soon as I can (usually within 2 business days).
+        </p>
     </Layout>
 )
 export default ContactPage
