@@ -36,7 +36,13 @@ const BlogPage = () => {
             <SEO title="Blog" />
             <h1>My Blog</h1>
             <p>Here's where I put all my random thoughts, straight from my head to your eyes.</p>
-            <ul>
+            <ul 
+                      style={{
+                        display: `flex`,
+                        justifyContent: `flex-end`,
+                        border: `2px solid gray`
+                      }}
+                      >
                 {blogPreviews}
             </ul>
         </Layout>
