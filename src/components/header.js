@@ -16,12 +16,13 @@ import { Link } from "gatsby"
  * pastel blue - light mono compliment - #749DAD
  * baby blue - #D4F1F4
  * dusty rose - #DCAE96
- * rose quarts - #F7CAC9
+ * rose quarts - #F7CAC9 
  * silver - #c0c0c0 
  * off white - #f5f5f5
  * teal - #008080
  * burnt orange - #B76900
  * dark mint green - #267055
+ * birch - #332922
  */
 const Header = ({ siteTitle }) => (
   <header className="mb-8">
@@ -29,7 +30,7 @@ const Header = ({ siteTitle }) => (
       style={{
         margin: `0 auto`,
         maxWidth: 960,
-        color: `#38555F`,
+        color: `#332922`,
         padding: `1.45rem 1.0875rem`,
       }}
     >
@@ -39,7 +40,7 @@ const Header = ({ siteTitle }) => (
         <Link
           to="/"
           style={{
-            color: `#38555F`,
+            color: `#332922`,
             textDecoration: `none`,
           }}
         >
