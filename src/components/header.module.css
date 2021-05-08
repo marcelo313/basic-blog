@@ -1,0 +1,21 @@
+.header {
+    margin: 3rem auto;
+    max-width: 1080px;
+    padding: 1.45rem 3rem;
+    color: #C8F4F9;
+    background-color: #3CACAE;
+}
+
+.headerTitle {
+    color: #C8F4F9;
+    text-decoration: none;
+    background-color: #1A1A1A;
+    padding: .5rem;
+
+}
+
+.headerLink {
+    text-decoration: none;
+    color: #1A1A1A;
+    padding: 1rem;
+}
