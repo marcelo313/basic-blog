@@ -21,8 +21,7 @@ const BlogPage = () => {
         }
     `)
 
-    const nodes = data.allMarkdownRemark.nodes
-    const blogPreviews = nodes.map((node) => 
+    const blogPreviews = data.allMarkdownRemark.nodes.map((node) => 
         <BlogPreview
         key={node.frontmatter.slug}
         blogTitle={node.frontmatter.title || `Blog Title`} 
@@ -36,9 +35,7 @@ const BlogPage = () => {
             <SEO title="Blog" />
             <h1>My Blog</h1>
             <p>Here's where I put all my random thoughts, straight from my head to your eyes.</p>
-            <ul>
-                {blogPreviews}
-            </ul>
+            <ul> {blogPreviews} </ul>
         </Layout>
     )
 }
