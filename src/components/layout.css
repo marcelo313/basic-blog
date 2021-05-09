@@ -31,6 +31,7 @@ menu,
 nav,
 section,
 summary {
+  font-family: "Open Sans";
   display: block;
 }
 audio,
