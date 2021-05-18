@@ -6,7 +6,7 @@
     max-width: 1080px;
     padding: 0.45rem 3rem;
     color: #3CACAE;
-    border-bottom: .75rem solid #3CACAE;
+    border-bottom: .5rem ridge #3CACAE;
 }
 
 .headerTitle {
