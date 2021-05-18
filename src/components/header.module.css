@@ -4,15 +4,14 @@
     justify-content: space-around;
     margin: 3rem auto;
     max-width: 1080px;
-    padding: 1.45rem 3rem;
-    color: #C8F4F9;
-    background-color: #3CACAE;
+    padding: 0.45rem 3rem;
+    color: #3CACAE;
+    border-bottom: .75rem solid #3CACAE;
 }
 
 .headerTitle {
-    color: #C8F4F9;
+    color: #1A1A1A;
     text-decoration: none;
-    background-color: #1A1A1A;
     padding: .8rem;
     font-family: "Krona One";
     margin-bottom: 1.45rem;
