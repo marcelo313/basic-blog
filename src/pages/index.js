@@ -15,6 +15,7 @@ const IndexPage = () => (
     <p>Here are just some of the different technologies I used to build this site:</p>
     <IconCollection></IconCollection>
     
+    <p>Here are some of the benefits from building a website this way:</p>
     <ul>
       <li>No heavy bogged down WordPress integrations or generic pre-built themes.</li>
       <li>Customize as much as I want.</li>
