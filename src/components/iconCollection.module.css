@@ -5,4 +5,6 @@
     border: 2px solid black;
     border-radius: 25px;
     padding: 20px;
+    margin-bottom: 1.45rem;
+    justify-content: space-around;
 }
