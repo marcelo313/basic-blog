@@ -7,4 +7,10 @@
     padding: 20px;
     margin-bottom: 1.45rem;
     justify-content: space-around;
+    max-width: 30rem;
+}
+
+h2 {
+    margin-left: .75rem;
+    margin-right: .75rem;
 }
