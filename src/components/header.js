@@ -6,11 +6,11 @@ import * as headerStyles from "./header.module.css"
 const Header = ({ siteTitle }) => (
   <header className={headerStyles.header}>
     <Link to="/" className={headerStyles.headerTitle}>{siteTitle}</Link>
-    <ul>
-      <li> <Link to="/about" className={headerStyles.headerLink}>About Me</Link> </li>
-      <li> <Link to="/blog" className={headerStyles.headerLink}>My Blog</Link> </li>
-      <li> <Link to="/contact-me" className={headerStyles.headerLink}>Contact Me</Link> </li>
-    </ul>
+    <div className={headerStyles.headerNav}>
+      <Link to="/about" className={headerStyles.headerLink}>About</Link>
+      <Link to="/blog" className={headerStyles.headerLink}>Blog</Link>
+      <Link to="/contact-me" className={headerStyles.headerLink}>Let's Connect</Link>
+    </div>
   </header>
 )
 

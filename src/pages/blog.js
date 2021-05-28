@@ -2,7 +2,7 @@ import { useStaticQuery, graphql } from "gatsby";
 import * as React from "react"
 import BlogPreview from "../components/blogPreview";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 
 const BlogPage = () => {
 
@@ -32,7 +32,7 @@ const BlogPage = () => {
 
     return (
         <Layout>
-            <SEO title="Blog" />
+            <Seo title="Blog" />
             <h1>My Blog</h1>
             <p>Here's where I put all my random thoughts, straight from my head to your eyes.</p>
             <ul> {blogPreviews} </ul>
