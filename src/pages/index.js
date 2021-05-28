@@ -2,12 +2,12 @@ import * as React from "react"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Layout from "../components/layout"
-import SEO from "../components/seo"
+import Seo from "../components/seo"
 import IconCollection from "../components/iconCollection"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
+    <Seo title="Home" />
 
     <StaticImage
       src="../images/close-up.JPG" alt="self portrait"
