@@ -1,8 +1,7 @@
 .header {
     margin-bottom: 3rem;
     padding: 1.5rem 3rem;
-    border-bottom: .5rem ridge #3CACAE;
-    background-color: #CCDEDE;
+    border-bottom: 8px solid #ADD8E6;
 }
 
 @media only screen and (max-width: 600px) {
