@@ -49,8 +49,8 @@ const IndexPage = () => (
     <ul>
       <li>No heavy bogged down WordPress integrations or generic pre-built themes.</li>
       <li>Customize as much as I want.</li>
-      <li>Quickly deploy updates to the cooud as soon as I merge to the main branch.</li>
-      <li>It's all open source, and you can check it out here.</li>
+      <li>Quickly deploy updates to the cloud as soon as I merge to the main branch.</li>
+      <li>It's all open source, and you can check it out here on <a href="https://github.com/jvmontes/basic-blog">Github</a>.</li>
     </ul>
 
     <h2>Thanks for visiting!</h2>
