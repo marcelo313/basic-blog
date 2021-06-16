@@ -11,7 +11,7 @@ const SuccessPage = () => (
             Thanks! Your message was successfully sent. Please allow 1-2 days for a reply. 
         </p>
         <p>
-            Back <Link to="/index">Home.</Link>    
+            Back <Link to="/">Home.</Link>    
         </p>
     </Layout>
 )
