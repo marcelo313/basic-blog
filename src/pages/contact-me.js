@@ -13,7 +13,7 @@ const ContactPage = () => (
             Please fill out this short form and I will respond as soon as I can (usually within 2 business days).
         </p>
 
-        <form name="contact-me" method="POST" data-netlify="true" action="/pages/contact-success">
+        <form name="contact-me" method="POST" data-netlify="true" action="/contact-success">
             <p>
                 <label>First Name: <input type="text" name="firstName" /></label>
             </p>
