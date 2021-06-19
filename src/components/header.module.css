@@ -1,5 +1,8 @@
 .header {
-    margin-bottom: 3rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
     padding: 1.5rem 3rem;
     border-bottom: 8px solid #ADD8E6;
 }
@@ -14,14 +17,25 @@
     display: flex;
     justify-content: flex-end;
     flex-wrap: wrap;
+
+    margin: 1.45rem 0;
+    padding: .8rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .headerNav {
+        padding: .2rem;
+        margin: 0;
+    }
 }
 
 .headerTitle {
+    padding: .8rem;
+    margin: 1.45rem 0;
+
     color: #1A1A1A;
     text-decoration: none;
-    padding: .8rem;
     font-family: "Krona One";
-    margin: 1.45rem 0;
     font-weight: bold;
     text-rendering: optimizeLegibility;
     font-size: 2.25rem;
