@@ -1,14 +1,16 @@
 .headerNav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-around;
     flex-wrap: wrap;
 
     margin: 1.45rem 0;
     padding: .8rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     .headerNav {
+        justify-content: flex-start;
+
         padding: .2rem;
         margin: 0;
     }
@@ -19,14 +21,25 @@
     flex-direction: column;
 
     min-width: 120px;
-    max-width: 160px;
-    text-align: center;
+
+    border: 2px solid #C8F4F9;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 700px) {
+    .headerLinkContainer {
+        min-width: 100px;
+
+        margin: 0.5rem;
+        border: none;
+    }
 }
 
 .headerLink {
     text-decoration: none;
     color: #1A1A1A;
     margin: auto;
+    padding: .5rem;
 }
 
 .headerLinkIcon {
