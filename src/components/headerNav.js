@@ -1,64 +1,69 @@
 import * as React from "react"
 import { Link } from "gatsby"
-import * as headerNavStyles from "./headerNav.module.css"
+import * as styles from "./headerNav.module.css"
 
 import { IconContext } from "react-icons"
 
 import { FiMail, FiCamera, FiHome, FiShoppingBag, FiBook, FiUser } from 'react-icons/fi'
 
+const activeStyles = {
+    background: '#C8F4F9',
+    fontWeight: 'bold',
+    color: '#1A1A1A',
+    textAlign: 'center'
+}
+
 const HeaderNav = () => (
 
-    <div className={headerNavStyles.headerNav}>
+    <div className={styles.headerNav}>
 
-        <div className={headerNavStyles.headerLinkContainer}>
-            <IconContext.Provider value={{ color: "#1A1A1A", size: "2rem" }}>
-                <span className={headerNavStyles.headerLinkIcon}><FiHome></FiHome></span>
+        <Link to="/" className={styles.linkContainer} activeStyle={activeStyles}>
+            <IconContext.Provider value={{ color: "#1A1A1A", size: "1.5rem" }}>
+                <span><FiHome></FiHome></span>
             </IconContext.Provider>
-            <Link to="/" className={headerNavStyles.headerLink}>Home</Link>
-        </div>
+            Home
+        </Link>
 
-        <div className={headerNavStyles.headerLinkContainer}>
-            <IconContext.Provider value={{ color: "#ADD8E6", size: "2rem" }}>
-                <span className={headerNavStyles.headerLinkIcon}><FiMail></FiMail></span>
+        <Link to="/contact-me" className={styles.linkContainer} activeStyle={activeStyles}>
+            <IconContext.Provider value={{ color: "#1A1A1A", size: "1.5rem" }}>
+                <span><FiMail></FiMail></span>
             </IconContext.Provider>
+            Message
+        </Link>
 
-            <Link to="/contact-me" className={headerNavStyles.headerLink}>Message</Link>
-        </div>
+        <Link to="/blog" className={styles.linkContainer} activeStyle={activeStyles}>
+            <IconContext.Provider value={{ color: "#1A1A1A", size: "1.5rem" }}>
+                <span><FiBook></FiBook></span>
+            </IconContext.Provider>
+            Blog
+        </Link>
 
-        
+        <Link to="/about" className={styles.linkContainer} activeStyle={activeStyles}>
+            <IconContext.Provider value={{ color: "#1A1A1A", size: "1.5rem" }}>
+                <span><FiUser></FiUser></span>
+            </IconContext.Provider>
+            About Me
+        </Link>
+
         {/* 
         
         GALLERY & SHOP ARE FUTURE FEATURES.
-        
-        <div className={headerNavStyles.headerLinkContainer}>
-            <IconContext.Provider value={{ color: "#1A1A1A", size: "2rem" }}>
-                <span className={headerNavStyles.headerLinkIcon}><FiCamera></FiCamera></span>
-            </IconContext.Provider>
-            <Link to="/" className={headerNavStyles.headerLink}>Gallery</Link>
-        </div>
 
-        <div className={headerNavStyles.headerLinkContainer}>
-            <IconContext.Provider value={{ color: "#56C6C6", size: "2rem" }}>
-                <span className={headerNavStyles.headerLinkIcon}><FiShoppingBag></FiShoppingBag></span>
+        <Link to="/gallery" className={styles.linkContainer} activeStyle={activeStyles}>
+            <IconContext.Provider value={{ color: "#1A1A1A", size: "1.5rem" }}>
+                <span><FiCamera></FiCamera></span>
             </IconContext.Provider>
-            <Link to="/" className={headerNavStyles.headerLink}>Shop</Link>
-        </div> 
+            Gallery
+        </Link>
+
+        <Link to="/shop" className={styles.linkContainer} activeStyle={activeStyles}>
+            <IconContext.Provider value={{ color: "#1A1A1A", size: "1.5rem" }}>
+                <span><FiShoppingBag></FiShoppingBag></span>
+            </IconContext.Provider>
+            Shop
+        </Link>
         
         */}
-
-        <div className={headerNavStyles.headerLinkContainer}>
-            <IconContext.Provider value={{ color: "#1A1A1A", size: "2rem" }}>
-                <span className={headerNavStyles.headerLinkIcon}><FiBook></FiBook></span>
-            </IconContext.Provider>
-            <Link to="/blog" className={headerNavStyles.headerLink}>Blog</Link>
-        </div>
-
-        <div className={headerNavStyles.headerLinkContainer}>
-            <IconContext.Provider value={{ color: "#ADD8E6", size: "2rem" }}>
-                <span className={headerNavStyles.headerLinkIcon}><FiUser></FiUser></span>
-            </IconContext.Provider>
-            <Link to="/about" className={headerNavStyles.headerLink}>About Me</Link>
-        </div>
     </div>
 
 )
