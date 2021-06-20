@@ -4,28 +4,12 @@
     flex-wrap: wrap;
 
     padding: 1.5rem 3rem;
-    border-bottom: 8px solid #ADD8E6;
+    border-bottom: 8px solid #C8F4F9;
 }
 
 @media only screen and (max-width: 600px) {
     .header {
         padding: 1.5rem 1.5rem;
-    }
-}
-
-.headerNav {
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: wrap;
-
-    margin: 1.45rem 0;
-    padding: .8rem;
-}
-
-@media only screen and (max-width: 600px) {
-    .headerNav {
-        padding: .2rem;
-        margin: 0;
     }
 }
 
@@ -40,14 +24,4 @@
     text-rendering: optimizeLegibility;
     font-size: 2.25rem;
     line-height: 1.1;
-}
-
-.headerLink {
-    text-decoration: none;
-    color: #1A1A1A;
-    padding: 1rem;
-}
-
-a:hover {
-    font-weight: bold;
 }

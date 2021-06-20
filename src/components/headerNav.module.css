@@ -1,0 +1,43 @@
+.headerNav {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+
+    margin: 1.45rem 0;
+    padding: .8rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .headerNav {
+        padding: .2rem;
+        margin: 0;
+    }
+}
+
+.headerLinkContainer {
+    display: flex;
+    flex-direction: column;
+
+    min-width: 120px;
+    max-width: 160px;
+    text-align: center;
+}
+
+.headerLink {
+    text-decoration: none;
+    color: #1A1A1A;
+    margin: auto;
+}
+
+.headerLinkIcon {
+    align-items: center;
+}
+
+span {
+    text-align: center;
+    font-size: large;
+}
+
+a:hover {
+    font-weight: bold;
+}
