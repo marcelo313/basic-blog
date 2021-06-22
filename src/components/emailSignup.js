@@ -3,8 +3,10 @@ import { FaPaperPlane } from 'react-icons/fa'
 import * as styles from './emailSignup.module.css'
 
 import { IconContext } from "react-icons"
+import { useBreakpoint } from 'gatsby-plugin-breakpoints'
 
 const EmailSignup = () => {
+    const breakpoints = useBreakpoint();
     return (
         <div className={styles.signupContainer}>
             <h3>Join me on this journey to unlock Endless Possibilities in life.</h3>
@@ -15,13 +17,14 @@ const EmailSignup = () => {
                     <div className={styles.emailContainer}>
                         
                         <div className={styles.emailInputContainer}>
-                            <label>Email: <input type="email" name="emailAddress" size="20" /></label>
+                            <label>Email: <input type="email" name="emailAddress" size={ breakpoints.sm ? '20' : '30' } /></label>
                             <button className={styles.sendButton} type="submit">
                                 <IconContext.Provider value={{ color: "#FFFFFF" }}>
                                     <FaPaperPlane></FaPaperPlane>
                                 </IconContext.Provider>
                             </button>
                         </div>
+                        
                         <div className={styles.disclaimerText}>
                             <span>*</span>
                             <span>The email address you provide will never be shared with anyone. This is simply to stay in touch over my journey. Thanks for your support!</span>
