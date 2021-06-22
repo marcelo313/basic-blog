@@ -5,6 +5,7 @@ import Seo from "../components/seo"
 import IconCollection from "../components/iconCollection"
 import HomeHeader from "../components/homeHeader"
 import EmailSignup from "../components/emailSignup"
+import SocialLinks from "../components/socialLinks"
 
 const IndexPage = () => (
   <Layout>
@@ -43,6 +44,8 @@ const IndexPage = () => (
     <h2>Thanks for visiting!</h2>
 
     <EmailSignup></EmailSignup>
+
+    <SocialLinks></SocialLinks>
 
   </Layout>
 )
