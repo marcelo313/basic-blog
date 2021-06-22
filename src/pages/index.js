@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import IconCollection from "../components/iconCollection"
 import HomeHeader from "../components/homeHeader"
+import EmailSignup from "../components/emailSignup"
 
 const IndexPage = () => (
   <Layout>
@@ -28,6 +29,7 @@ const IndexPage = () => (
     <h4>This is a website I’ve built completely from the ground up.</h4>
 
     <p>Here are just some of the different technologies I used to build this site:</p>
+
     <IconCollection></IconCollection>
 
     <p>Here are some of the benefits from building a website this way:</p>
@@ -39,6 +41,8 @@ const IndexPage = () => (
     </ul>
 
     <h2>Thanks for visiting!</h2>
+
+    <EmailSignup></EmailSignup>
 
   </Layout>
 )

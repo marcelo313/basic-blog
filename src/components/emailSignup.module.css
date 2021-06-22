@@ -1,0 +1,52 @@
+.signupContainer {
+    border: 2px solid #E6E6E6;
+    border-radius: 20px;
+    padding: 1.5rem 1rem;
+}
+
+.emailContainer {
+    margin: 2rem 1rem;
+    border: 2px solid #1A1A1A;
+    background-color: #E6E6E6;
+    border-radius: 20px;
+    padding: 1.5rem 1rem;
+    max-width: 760px;
+}
+
+.emailInputContainer {
+    display: flex;
+}
+
+.sendButton {
+    margin-left: .5rem;
+    padding: 0 .5rem;
+    background-color: #3CACAE;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+}
+
+.disclaimerText {
+    display: flex;
+    font-size: small;
+    margin: .5rem 0 0 0;
+}
+
+@media screen and (max-width: 600px) {
+
+    .emailContainer {
+        margin: .5rem .25rem;
+    }
+    
+    .emailInputContainer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sendButton {
+        width: 60px;
+        padding: .25rem 0;
+        margin-left: 0;
+        margin-top: .5rem;
+    }
+}

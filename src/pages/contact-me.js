@@ -11,7 +11,7 @@ const ContactPage = () => (
             Looking to build a website for your business? I'd love to hear from you!
         </p>
         <p>
-            Please fill out this short form and I will respond as soon as I can (usually within 2 business days).
+            Please fill out this short form and I will respond within 2 business days.
         </p>
 
         <ContactForm></ContactForm>
