@@ -7,7 +7,7 @@ const homeHeader = () => {
     return (
         <div className={styles.homeHeaderContainer}>
             <StaticImage
-                src="../images/jorge-headshot.png" alt="Headshot of Jorge"
+                src="../images/headshot-engaged.jpg" alt="Headshot of Jorge"
                 placeholder="blurred"
                 layout="fixed"
                 width={300}
