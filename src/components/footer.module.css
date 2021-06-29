@@ -18,12 +18,16 @@
     font-size: 75%;
 }
 
-a {
+.footerLink {
     color: #B2289B;
     text-decoration: none;
 }
 
-div {
+.footerLink:hover {
+    font-weight: bold;
+}
+
+.footerComponent {
     padding-top: .75rem;
     margin-right: .75rem;
 }

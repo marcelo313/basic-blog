@@ -2,7 +2,7 @@ import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 import PropTypes from "prop-types"
-import * as styles from "../components/blog-preview.module.css";
+import * as styles from "../components/blogPreview.module.css";
 
 const BlogPreview = ({ blogTitle, excerpt, date, slug, avatar }) => (
     <div className={styles.blog}>

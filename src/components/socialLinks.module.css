@@ -1,0 +1,25 @@
+.socialsContainer {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    margin: 1rem auto;
+    padding: .5rem 0;
+    width: 120px;
+
+    border-radius: 20px;
+
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: #1A1A1A;
+}
+
+.linkContainer:hover {
+    background: #E6E6E6;
+}

@@ -1,0 +1,21 @@
+.homeHeaderContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    padding: 4rem;
+}
+
+@media screen and (max-width: 600px) {
+    .homeHeaderContainer {
+        padding: 1rem;
+    }
+}
+
+.homeHeaderText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    line-height: 1.5;
+}
