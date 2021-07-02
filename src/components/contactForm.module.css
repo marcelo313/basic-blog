@@ -14,6 +14,14 @@
     height: 120px;
 }
 
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    
+}
+
+
 @media screen and (max-width: 600px) {
     .formMessage {
         width: 310px; 
